@@ -25,3 +25,10 @@ extension URLRequest {
         }
     }
 }
+
+extension ArticleResponse {
+    static var all: Resource<ArticleResponse> = {
+        let url = URL(string: Commons.baseNewsApiUrl + "/top-headlines?country=us&apiKey=" + Commons.apiKey)!
+        return Resource(url: url)
+    }()
+}

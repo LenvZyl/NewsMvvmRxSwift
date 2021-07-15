@@ -9,4 +9,5 @@ import Foundation
 
 class Commons {
     static let apiKey = "b2a997e7d3f6409c8967fb48d4d411fe"
+    static let baseNewsApiUrl = "https://newsapi.org/v2"
 }
